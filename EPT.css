@@ -1,0 +1,340 @@
+body {
+  font-family: "Poppins";
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+#header {
+  font-family: "Open Sans";
+}
+
+/* Gestion des changements de couleurs et effets hovers */
+.hover-me {
+  color: white;
+}
+
+.hover-me:hover {
+  color: blue;
+}
+
+.nav-item a:hover {
+  color: blue;
+}
+
+.img_a {
+  text-decoration: none;
+}
+
+.a_colored {
+  color: rgb(221, 153, 51);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a_colored:hover {
+  color: rgb(221, 153, 51);
+}
+
+.card-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-title-link:hover {
+  color: rgb(221, 153, 51);
+}
+
+.ev-link {
+  float: right;
+  outline: 2px solid lightgray;
+}
+
+.ev-link:hover {
+  color: rgb(221, 153, 51);
+  outline-color: rgb(221, 153, 51);
+}
+
+.peru-color {
+  color: rgb(221, 153, 51);
+}
+
+.p_colored {
+  color: #e5e5e5;
+  font-size: 13px;
+}
+
+.actu_a {
+  color: white;
+  text-decoration: none;
+}
+
+.actu_a:hover {
+  color: #f4e3a8;
+}
+
+#hover-link:hover {
+  background-color: #fff;
+}
+
+/* Traits sur les lettres des titres */
+.underline-color {
+  border-bottom: 3px solid rgb(221, 153, 51);
+}
+
+.underline-color-light {
+  border-bottom: 3px solid rgb(221, 221, 221);
+}
+
+.underline-white {
+  border-bottom: 2px solid rgba(119, 119, 119, 0.8);
+}
+
+/* Changement de taille*/
+.actu_img {
+  width: 100px;
+  height: 50px;
+}
+
+.size-image {
+  width: 16rem;
+  height: 7rem;
+}
+
+.date-day {
+  font-size: 6.8vw;
+}
+
+.date-month {
+  font-size: 1.5vw;
+}
+
+.fa_icon_counter {
+  font-size: 7vw;
+}
+
+.fa_icon_counter_text {
+  font-size: 1.5vw;
+}
+
+.fa_icon_counter_number {
+  font-size: 4vw;
+}
+
+/* Image avatar pour partie ce qu'ils disent de nous */
+#img_avatar {
+  clip-path: circle(50% at 50% 50%);
+  border: 5px solid lightgray;
+  border-radius: 100%;
+  margin-top: -1.5rem;
+}
+
+/* Banner pour nouvelles actualités */
+#candidature {
+  background: linear-gradient(rgba(6, 5, 5, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://ept.sn/wp-content/uploads/2021/07/Panorama-sans-titre1-scaled.jpg)
+      no-repeat fixed center;
+}
+
+/* Gestion des cartes pour actualités et bienvenue à l'ept */
+.carte:hover {
+  background-color: rgb(119, 119, 119, 0.1);
+  border-color: rgba(205, 133, 63, 0.5);
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Barre de recherche  */
+#rechercher {
+  width: 88vw;
+}
+
+#rechercher:focus {
+  outline: 3px solid blue;
+}
+
+.errspan {
+  float: right;
+  position: relative;
+  margin-left: 85vw;
+  margin-top: -5.8vw;
+  color: rgb(119, 119, 119);
+}
+
+/* Carousel pour le banner gestion des flèches */
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 120px;
+  bottom: 120px;
+  width: 3%;
+  font-size: 10px;
+  color: gray;
+  height: 35%;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+.carousel-control-prev {
+  left: 0;
+}
+
+/* Carousel pour nos partenaires gestion des flèches */
+.left,
+.right {
+  width: 3%;
+  font-size: 20px;
+  margin-top: -400px;
+}
+
+.left:after,
+.right:after {
+  font-size: 45px;
+  color: blue;
+}
+
+.right:after {
+  content: ">";
+}
+
+.left:after {
+  content: "<";
+}
+
+/*Code sous menu */
+.sub-menu ul li {
+  list-style-type: none;
+}
+
+.sub-menu ul li {
+  width: 88vw;
+  border-bottom: 2px solid lightgray;
+}
+
+.sub-menu ul li:hover {
+  background-color: rgba(205, 133, 63, 0.2);
+}
+
+.sub-menu ul li:hover a {
+  color: rgb(221, 153, 51);
+}
+
+.sub-menu ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.sub-menu ul li:hover .nav-link {
+  color: rgb(221, 153, 51);
+}
+
+/* Code Foire aux questions*/
+label {
+  background-color: rgba(119, 119, 119, 0.1);
+  border: 1px solid lightgray;
+  transition: ease 0.5s;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px 25px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 56% 100%);
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+
+input:checked + label::after {
+  content: "-";
+  background-color: peru;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 56% 100%);
+  right: 0px;
+  top: 3px;
+}
+
+input:checked + label {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.content {
+  border: 1px solid lightgray;
+  border-top: none;
+}
+
+input + label + .content {
+  display: none;
+}
+
+input:checked + label + .content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo_ept {
+    margin-left: 37vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .left,
+  .right {
+    margin-top: -100px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 60px;
+    bottom: 60px;
+  }
+}
+
+/* Code sous-menu déroulant site moyen+ */
+@media (min-width: 768px) {
+  .sub-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-top: 5px solid rgb(221, 153, 51);
+    margin: 25px 0px 0px 25px;
+    z-index: 3;
+  }
+  .menu-bar ul li:hover .sub-menu ul {
+    list-style-type: none;
+  }
+  .menu-bar ul li:hover .sub-menu ul li {
+    width: 200px;
+    padding: 5px;
+    margin-left: -20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+  }
+  .menu-bar ul li:hover .sub-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+  .menu-bar ul li:hover .sub-menu ul li:hover {
+    background-color: rgba(205, 133, 63, 0.2);
+    cursor: pointer;
+  }
+  .menu-bar ul li:hover .sub-menu ul li:hover a {
+    color: rgb(221, 153, 51);
+  }
+  .menu-bar ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+  }
+}
